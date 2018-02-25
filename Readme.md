@@ -25,3 +25,20 @@ npm run build
 ```
 npm run tests
 ```
+
+## Benchmarks
+
+The current implementation of lists in SugarCube is compared to
+[`list`](https://www.npmjs.com/package/list).
+
+```
+cd benchmarks
+npm i
+npm run concat
+```
+
+There is a *run all benchmarks* script in the project root.
+
+```
+npm run benchmarks
+```

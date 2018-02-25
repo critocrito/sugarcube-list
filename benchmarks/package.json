@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "concat": "babel-node ./concat.suite.js"
+  },
+  "devDependencies": {
+    "@sugarcube/test": "^0.5.1",
+    "babel-cli": "^6.26.0",
+    "benchmark": "^2.1.4",
+    "list": "^2.0.3",
+    "lodash": "^4.17.5"
+  }
+}

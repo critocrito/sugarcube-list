@@ -1,7 +1,7 @@
 {
-  "name": "js-lib-scaffold",
+  "name": "sugarcube-list",
   "version": "0.0.0",
-  "description": "A scaffolding repository to start a new JS libraries for NodeJS or the browser.",
+  "description": "Experiments with lists for SugarCube.",
   "main": "_dist/main.js",
   "browser": "_dist/browser.js",
   "module": "lib/index.js",
@@ -21,7 +21,7 @@
     "watch": "npm run test -- -w",
     "test": "cross-env NODE_ENV=test mocha -c -R progress -r babel-core/register -r test/helpers.js $npm_package_config_testDir/**/*.spec.js",
     "coverage": "nyc npm test",
-    "lint": "eslint --cache $npm_package_config_testDir $npm_package_config_srcDir",
+    "lint": "eslint --cache $npm_package_config_testDir $npm_package_config_srcDir rollup.config.js",
     "fix": "npm run lint -- --fix",
     "compile": "npm run clean -s && rollup -c",
     "clean": "rimraf $npm_package_config_distDir",
@@ -31,15 +31,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/critocrito/js-lib-scaffold.git"
+    "url": "https://github.com/critocrito/sugarcube-list.git"
   },
   "keywords": [],
   "author": "Christo <christo@cryptodrunks.net>",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://gitlab.com/critocrito/js-lib-scaffold/issues"
+    "url": "https://github.com/critocrito/sugarcube-list/issues"
   },
-  "homepage": "https://gitlab.com/critocrito/js-lib-scaffold#Readme.md",
+  "homepage": "https://github.com/critocrito/sugarcube-list#Readme.md",
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^8.2.2",

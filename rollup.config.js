@@ -22,8 +22,8 @@ export default [
       file: pkg.browser,
       format: "iife",
       sourcemap: true,
+      name: "list",
     },
-    name: "scaffold",
   },
   {
     input,
@@ -31,8 +31,8 @@ export default [
       file: `${pkg.browser.split(".")[0]}.min.js`,
       format: "iife",
       sourcemap: true,
+      name: "list",
     },
-    name: "scaffold",
     plugins: plugins.concat([uglify()]),
   },
   {
